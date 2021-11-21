@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Work+Sans:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+:root {
+  --main-color: rgb(34,193,195);
+}
+
+body{
+  background: var(--main-color);
+  font-family: 'Noto Sans JP', Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  top: 0;
+}
+
+html{
+  font-size: 100%;
+}
+
+.auth{
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 700px;
+  width: 30%;
+  height: 60%;
+  margin: 100px auto;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  border: 3px solid var(--main-color);
+}
+
+.headerTitle{
+  text-align: center;
+  font-family: 'open sans', sans-serif;
+  padding: 2rem 0 0 0;
+  margin: 0;
+  font-size: 2rem;
+  color: rgba(34, 34, 34, 0.623);
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.85rem;
+  max-width: 100%;
+  
+}
+
+.row input{
+  width: 80%;
+  box-sizing: border-box;
+	border: none;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
+  transition: box-shadow 0.2s ease-in;
+}
+
+.row input:focus{
+   box-shadow: inset 0px -3px 0px 0px var(--main-color);
+   outline: none;
+}
+
+.row input::-webkit-input-placeholder{
+  opacity: 1;
+  transition: opacity 0.25s ease-out;
+}
+
+.row input:hover::-webkit-input-placeholder,
+.row input:focus::-webkit-input-placeholder{
+  opacity: 0;
+}
+
+.row label{
+  align-self: flex-start;
+  text-align: left;
+  width: 80%;
+  padding-left: calc(1.5rem + 10%);
+  padding-bottom: 0.5rem;
+  color: rgba(187,187,187,0.9);
+}
+
+.row button{
+  border-radius: 25px;
+  width: 80%;
+  height: 55px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+  background: var(--main-color);
+  border: 0px;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.row button:hover{
+  opacity: 0.8;
+  /*transform: translateY(0.15rem);*/
+}
+
+.loginButton{
+  padding-bottom: 0.5rem;
+}
+
+.iconInstagram{
+  width: 3rem;
+  height: 3rem;
+}
+
+.iconFacebook{
+  width: 3rem;
+  height: 3rem;
+}
+
+.iconTwitter{
+  width: 3rem;
+  height: 3rem;
+}
+
+.iconGoogle{
+  width: 3rem;
+  height: 3rem;
+}
+
+.socialsLogin {
+   text-align: center;
+   margin-top: 1.5rem;
+   font-size: 1.3rem;
+}
+.socialsLogin {
+  color: rgba(34, 34, 34, 0.623);
+}
+
+.lostCreds{
+  align-self: end;
+  text-align: right;
+}
+.lostCreds a{
+  color: rgba(187,187,187,0.9);
+  padding-right: 3rem;
+}
+
+.socialsGroup{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem 0;
+  gap: 10px;
+}
+
+.socialsGroup a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.9rem;
+  color: var(--main-color);
+  text-decoration: none;
+  margin: 2%;
+  transition: transform 0.2s;
+}
+.socialsGroup a:hover {
+  transform: translateY(0.15rem);
+  color: rgba(187,187,187,0.9);
+  z-index: 1;
+}
+
+@keyframes spin{
+  to{transform: rotate(360deg);}
+}
+/*
+  border: 5px solid #333;
+  transform: rotate(0deg);
+  animation: spin 1.5s linear infinite;
+  border-top: 6px solid var(--main-color);
+*/

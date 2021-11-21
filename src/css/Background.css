@@ -1,0 +1,67 @@
+
+.bg-block{
+  position: absolute;
+  top: 0 !important;
+  margin: 0 !important;
+  filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+}
+.bg {
+  background: url('https://thumbs.dreamstime.com/b/seamless-background-christmas-trees-snow-horizontal-holiday-against-blue-sky-vector-44970300.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  left: 0;
+  z-index: -10;
+  width: inherit;
+  height: 800px;
+  min-height: 500px;
+  overflow: hidden;
+  /*transform: translate(0, -110px);*/
+  transform: scale(1, 1.3);
+  animation: move-clouds-one 40s linear 0s;
+}
+.bg-after {
+  content: '';
+  background: url('https://thumbs.dreamstime.com/b/seamless-background-christmas-trees-snow-horizontal-holiday-against-blue-sky-vector-44970300.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 100vw;
+  z-index: -9;
+  width: inherit;
+  height: 800px;
+  min-height: 500px;
+  overflow: hidden;
+  /*transform: translate(0, -110px);*/
+  transform: scale(1, 1.3);
+  animation: move-clouds 80s linear 0s infinite;
+}
+.bg-before {
+  content: '';
+  background: url('https://thumbs.dreamstime.com/b/seamless-background-christmas-trees-snow-horizontal-holiday-against-blue-sky-vector-44970300.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  z-index: -9;
+  width: inherit;
+  height: 800px;
+  min-height: 500px;
+  overflow: hidden;
+  /*transform: translate(0, -110px);*/
+  transform: scale(1, 1.3);
+  animation: move-clouds 80s linear 40s infinite;
+}
+@keyframes move-clouds-one {
+ from { left: 0; }
+ to { left: 20vw; }
+}
+@keyframes move-clouds {
+ from { left: -20vw; }
+ to { left: 20vw; }
+}
